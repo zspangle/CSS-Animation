@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.spiderman{
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 50px 50% 0 50%;
+    transform: rotate(-15deg);
+    transform-origin: 50% 0;
+    animation-name: swing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes swing {
+    0%  {
+        transform: rotate(-15deg);
+    }
+    35% {
+        transform: rotate(0deg);
+    }
+    0% {
+        transform: rotate(30deg);
+    }
+    35% {
+        transform: rotate(60deg);
+    }
+    35% {
+        transform: rotate(90deg);
+    }
+    35% {
+        transform: rotate(60deg);
+    }
+
+}
